@@ -1,4 +1,4 @@
--- Total Revenue
+## Total Revenue
 SELECT SUM(TotalDue) AS TotalRevenue
 FROM Sales.SalesOrderHeader;
 
