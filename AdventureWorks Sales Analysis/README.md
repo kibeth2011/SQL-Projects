@@ -36,9 +36,11 @@ How has revenue changed over time?
 
 ## Result
 Yearly Trend Chart
+
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Revenue%20Trend%20by%20Year-Line%20chart.png)
 
 Monthly Trend Chart
+
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Revenue%20Trend%20by%20Month-Line%20chart.png)
 
 ## Insight
