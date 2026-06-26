@@ -4,7 +4,7 @@
 This project analyzes sales data from the AdventureWorks database using Microsoft SQL Server. The objective was to explore business performance, identify sales trends, evaluate product performance, understand customer behavior, and assess territory performance. Through SQL queries and data visualization, the analysis provides insights that can support strategic business decisions and improve overall sales performance.
 
 ## Dataset
-#### Dataset
+Dataset
 - <a href="https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak">AdventureWorks2022</a>
 
 ## Tools Used
@@ -24,15 +24,15 @@ This project analyzes sales data from the AdventureWorks database using Microsof
 - Territory Analysis
 - Data Visualization
 
-# Database Exploration
-## Business Question
+# A. Database Exploration
+## Business Question 1
 What business areas, tables, and sales data are available for analysis?
 
 ## Insight
 The AdventureWorks database contains multiple business areas including Sales, Production, Person, Purchasing, and Human Resources. The Sales schema provided the primary tables required for this project, including customer, SalesOrderHeader, SalesOrderDetail, SalesPerson, SalesTerritory, and product sales information. A total of 31,465 sales orders were identified for analysis, generating approximately $123.22 million in revenue.
 
-# Sales Performance Analysis
-## Business Question
+# B. Sales Performance Analysis
+## Business Question 2
 How has revenue changed over time?
 
 ## Result
@@ -47,7 +47,7 @@ Revenue increased significantly between 2011 and 2013, growing from $14.16 milli
 
 Monthly revenue trends revealed fluctuations throughout the analysis period, suggesting seasonal demand patterns and changing customer purchasing behavior.
 
-## Business Question
+## Business Question 3
 Was revenue growth driven by more orders?
 
 ## Result
@@ -56,7 +56,7 @@ Was revenue growth driven by more orders?
 ## Insight
 Order volume increased steadily between 2011 and 2013, reaching a peak of 14,182 orders. However, order volume declined in 2014 to 11,761 orders, suggesting a slowdown in transaction growth after a period of strong expansion.
 
-## Business Question
+## Business Question 4
 Are customers spending more per order over time?
 
 ## Result
@@ -65,8 +65,8 @@ Are customers spending more per order over time?
 ## Insight
 Average order value peaked at $9,623.42 in 2012 before declining to $1,906.26 in 2014. Although order volume increased, customers were placing smaller orders on average.
 
-# Product Analysis
-## Business Question
+# C. Product Analysis
+## Business Question 5
 Which product generated the most revenue?
 
 ## Result
@@ -75,7 +75,7 @@ Which product generated the most revenue?
 ## Insight
 The highest-performing product was Mountain-200 Black 38. It generated approximately $4.4 million in revenue, demonstrating the importance of maintaining strong inventory, marketing, and sales strategies.
 
-## Business Question
+## Business Question 6
 Which product sold the highest number of units?
 
 ## Result
@@ -84,7 +84,7 @@ Which product sold the highest number of units?
 ## Insight
 AWC Logo Cap achieved strong sales volumes of 8311, indicating consistent customer demand and broad market appeal.
 
-## Business Question
+## Business Question 7
 Which product categories contribute the most revenue?
 
 ## Result
@@ -93,7 +93,7 @@ Which product categories contribute the most revenue?
 ## Insight
 Bikes category contributed to the most revenue of approximately $94.7 million, highlighting the category that drive overall business performance and profitability.
 
-## Business Question
+## Business Question 8
 Which product generate the least revenue?
 
 ## Result
@@ -102,14 +102,14 @@ LL Road Seat/Saddle with $162.72
 ## Insight
 The LL Road Seat/Saddle generated only $162.72 in revenue, making it the lowest-performing product identified in the analysis. This product may require review regarding pricing, promotion, or inventory allocation.
 
-## Business Question
+## Business Question 9
 What is the average revenue generated per product?
 
 ## Insight
 The average revenue generated per product was approximately $412,956.32, indicating substantial variation between top-performing and low-performing products.
 
-# Customer Analysis
-## Business Question
+# D. Customer Analysis
+## Business Question 10
 Which customer generated the most revenue?
 
 ## Result
@@ -118,7 +118,7 @@ Which customer generated the most revenue?
 ## Insight
 CustomerID 29818 generated the highest revenue, demonstrating the importance of identifying and retaining high-value customers.
 
-## Business Question
+## Business Question 11
 Which customer place the most orders?
 
 ## Result
@@ -127,13 +127,13 @@ Which customer place the most orders?
 ## Insight
 CustomerID 11091 placed the highest number of orders, indicating strong engagement and purchasing frequency.
 
-## Business Question
+## Business Question 12
 How much does the average customer spend?
 
 ## Insight
 The average customer spending was approximately $6,444.73, providing a useful benchmark for evaluating customer value and segmentation strategies.
 
-## Business Question
+## Business Question 13
 Which customer spends the most per order?
 
 ## Result
@@ -142,14 +142,14 @@ Which customer spends the most per order?
 ## Insight
 CustomerID 29641 recorded the highest average order value, representing a premium customer segment with high transaction values.
 
-## Business Question
+## Business Question 14
 How many unique customers made purchases?
 
 ## Insight
 The business served 19,119 unique customers, demonstrating a broad customer base across multiple markets.
 
-# Territory Analysis
-## Business Question
+# E. Territory Analysis
+## Business Question 15
 Which sales territories generate the most revenue?
 
 ## Result
@@ -158,7 +158,7 @@ Which sales territories generate the most revenue?
 ## Insight
 Australia Territory generated the most revenue of over $25 million, suggesting key geographic market for continued growth.
 
-## Business Question
+## Business Question 16
 Which territory generate the highest number of orders?
 
 # Result
@@ -167,7 +167,7 @@ Which territory generate the highest number of orders?
 ## Insight
 Australia generated the highest number with almost 7,000 orders, suggesting key geographic market for continued growth.
 
-## Business Question
+## Business Question 17
 Which territory has the highest average order value?
 
 ## Result
