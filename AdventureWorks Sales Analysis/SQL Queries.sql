@@ -1,4 +1,4 @@
-//*Database Exploration*//
+/*/*Database Exploration*/*/
 /*What business areas exist in AdventureWorks?*/
 SELECT DISTINCT TABLE_SCHEMA
 FROM INFORMATION_SCHEMA.TABLES
@@ -24,7 +24,7 @@ SELECT
     CAST(SUM(TotalDue) AS DECIMAL(18,2)) AS TotalRevenue
 FROM Sales.SalesOrderHeader;
 
-//*Sales Performance Analysis*//
+/*/*Sales Performance Analysis*/*/
 /*How has revenue changed over time?*/
 SELECT
     YEAR(OrderDate) AS SalesYear,
@@ -58,7 +58,7 @@ FROM
 GROUP BY MONTH(OrderDate)
 ORDER BY SalesMonth
 
-//*Product Analysis*//
+/*/*Product Analysis*/*/
 /*Which products generate the most revenue?*/
 SELECT TOP 10
     p.Name AS ProductName,
@@ -115,7 +115,7 @@ JOIN Production.Product p
 GROUP BY p.Name
 ORDER BY Revenue ASC;
 
-//*Customer Analysis*//
+/*/*Customer Analysis*/*/
 /*Which customers generate the most revenue?*/
 SELECT TOP 10
     soh.CustomerID,
@@ -157,7 +157,7 @@ SELECT
     COUNT(DISTINCT CustomerID) AS TotalCustomers
 FROM Sales.SalesOrderHeader;
 
-//*Territory Analysis*//
+/*/*Territory Analysis*/*/
 /*Which sales territories generate the most revenue?*/
 SELECT
     st.Name AS Territory,
