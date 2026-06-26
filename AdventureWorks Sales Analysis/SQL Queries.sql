@@ -124,6 +124,81 @@ FROM Sales.SalesOrderHeader soh
 GROUP BY soh.CustomerID
 ORDER BY Revenue DESC;
 
-/*
+/*Which customers place the most orders?*/
+SELECT TOP 10
+    CustomerID,
+    COUNT(*) AS TotalOrders
+FROM Sales.SalesOrderHeader
+GROUP BY CustomerID
+ORDER BY TotalOrders DESC;
 
+/*How much does the average customer spend?*/
+SELECT
+    CAST(AVG(CustomerRevenue) AS DECIMAL(18,2)) AS AvgCustomerSpending
+FROM
+(
+    SELECT
+        CustomerID,
+        SUM(TotalDue) AS CustomerRevenue
+    FROM Sales.SalesOrderHeader
+    GROUP BY CustomerID
+) AS CustomerSales;
 
+/*Which customers spend the most per order?*/
+SELECT TOP 10
+    CustomerID,
+    CAST(AVG(TotalDue) AS DECIMAL(18,2)) AS AvgOrderValue
+FROM Sales.SalesOrderHeader
+GROUP BY CustomerID
+ORDER BY AvgOrderValue DESC;
+
+/*How many unique customers made purchases?*/
+SELECT
+    COUNT(DISTINCT CustomerID) AS TotalCustomers
+FROM Sales.SalesOrderHeader;
+
+//*Territory Analysis*//
+/*Which sales territories generate the most revenue?*/
+SELECT
+    st.Name AS Territory,
+    CAST(SUM(soh.TotalDue) AS DECIMAL(18,2)) AS Revenue
+FROM Sales.SalesOrderHeader soh
+JOIN Sales.SalesTerritory st
+    ON soh.TerritoryID = st.TerritoryID
+GROUP BY st.Name
+ORDER BY Revenue DESC;
+
+/*Which territories generate the highest number of orders?*/
+SELECT
+    st.Name AS Territory,
+    COUNT(*) AS TotalOrders
+FROM Sales.SalesOrderHeader soh
+JOIN Sales.SalesTerritory st
+    ON soh.TerritoryID = st.TerritoryID
+GROUP BY st.Name
+ORDER BY TotalOrders DESC;
+
+/*Which territory have the highest average order value?*/
+SELECT
+    st.Name AS Territory,
+    CAST(AVG(soh.TotalDue) AS DECIMAL(18,2)) AS AvgOrderValue
+FROM Sales.SalesOrderHeader soh
+JOIN Sales.SalesTerritory st
+    ON soh.TerritoryID = st.TerritoryID
+GROUP BY st.Name
+ORDER BY AvgOrderValue DESC;
+
+/*What percentage of total revenue comes from each territory?*/
+SELECT
+    st.Name AS Territory,
+    CAST(SUM(soh.TotalDue) AS DECIMAL(18,2)) AS Revenue,
+    CAST(
+        100.0 * SUM(soh.TotalDue) /
+        SUM(SUM(soh.TotalDue)) OVER ()
+        AS DECIMAL(5,2)
+    ) AS RevenuePercentage
+FROM Sales.SalesOrderHeader soh
+JOIN Sales.SalesTerritory st
+    ON soh.TerritoryID = st.TerritoryID
+GROUP BY st.Name
+ORDER BY Revenue DESC;
