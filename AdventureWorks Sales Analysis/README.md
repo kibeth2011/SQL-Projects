@@ -53,7 +53,7 @@ Was revenue growth driven by more orders?
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Number%20of%20Orders%20by%20Year-Bar%20chart.png)
 
 ## Insight
-Order volume increased dramatically from 1,607 orders in 2011 to 11,761 orders in 2014. This indicates that business growth was supported by a substantial increase in customer transactions.
+Order volume increased steadily between 2011 and 2013, reaching a peak of 14,182 orders. However, order volume declined in 2014 to 11,761 orders, suggesting a slowdown in transaction growth after a period of strong expansion.
 
 ## Business Question
 Are customers spending more per order over time?
@@ -177,15 +177,36 @@ The Central territory recorded the highest average order value, indicating stron
 
 # Key Findings
 1. AdventureWorks generated approximately $123.22 million in total revenue.
-Revenue increased substantially between 2011 and 2013, reaching a peak of $48.97 million in 2013.
-The business processed 31,465 sales orders during the analysis period.
-Order volume increased significantly while average order value declined after 2012.
-The company served 19,119 unique customers with average customer spending of $6,444.73.
-Average revenue per product was approximately $412,956.32.
-Customer 29818 generated the highest revenue, while customer 11091 placed the highest number of orders.
-The Central territory recorded the highest average order value.
-The LL Road Seat/Saddle was the lowest-performing product, generating only $162.72 in revenue.
+2. Revenue increased substantially between 2011 and 2013, reaching a peak of $48.97 million in 2013.
+3. The business processed 31,465 sales orders during the analysis period.
+4. Order volume and revenue both peaked in 2013 before declining in 2014, while average order value continued to decrease after 2012.
+5. The company served 19,119 unique customers with average customer spending of $6,444.73.
+6. Average revenue per product was approximately $412,956.32.
+7. CustomerID 29818 generated the highest revenue, while customerID 11091 placed the highest number of orders.
+8. The Central territory recorded the highest average order value.
+9. The LL Road Seat/Saddle was the lowest-performing product, generating only $162.72 in revenue.
 
+# Recommendations
+1. Investigate the factors behind the decline in revenue, order volume, and average order value in 2014 to determine whether changes in customer demand, product mix, pricing, or market conditions contributed to the slowdown.
+2. Focus marketing efforts on high-performing products and product categories.
+3. Develop retention strategies for high-value customers.
+4. Analyze the success factors behind top-performing territories and apply them to lower-performing regions.
+5. Review low-performing products to determine whether pricing, promotion, or inventory adjustments are necessary.
+6. Monitor monthly sales trends to identify seasonal opportunities and improve forecasting accuracy.
+
+# Author
+
+Kibet Hillary
+
+BSc Applied Statistics, with IT (Second Class Honours, Upper Division)
+
+Aspiring Data Analyst/Scientist
+
+Email: kibeth2011@gmail.com
+
+- <a href="https://github.com/kibeth2011">GitHub</a>
+
+- <a href="https://www.linkedin.com/in/kibet-hillary-4654507b/">LinkedIn</a>
 
 
 
