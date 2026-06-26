@@ -1,4 +1,4 @@
-/*Database Exploration*/
+//*Database Exploration*//
 /*What business areas exist in AdventureWorks?*/
 SELECT DISTINCT TABLE_SCHEMA
 FROM INFORMATION_SCHEMA.TABLES
@@ -24,6 +24,7 @@ SELECT
     CAST(SUM(TotalDue) AS DECIMAL(18,2)) AS TotalRevenue
 FROM Sales.SalesOrderHeader;
 
+//*Sales Performance Analysis*//
 /*How has revenue changed over time?*/
 SELECT
     YEAR(OrderDate) AS SalesYear,
@@ -57,6 +58,7 @@ FROM
 GROUP BY MONTH(OrderDate)
 ORDER BY SalesMonth
 
+//*Product Analysis*//
 /*Which products generate the most revenue?*/
 SELECT TOP 10
     p.Name AS ProductName,
@@ -66,4 +68,62 @@ JOIN Production.Product p
     ON sod.ProductID = p.ProductID
 GROUP BY p.Name
 ORDER BY Revenue DESC;
+
+/*Which products sell the highest number of units?*/
+SELECT TOP 10
+    p.Name AS ProductName,
+    SUM(sod.OrderQty) AS QuantitySold
+FROM Sales.SalesOrderDetail sod
+JOIN Production.Product p
+    ON sod.ProductID = p.ProductID
+GROUP BY p.Name
+ORDER BY QuantitySold DESC;
+
+/*Which product categories contribute the most revenue?*/
+SELECT
+    pc.Name AS ProductCategory,
+    CAST(SUM(sod.LineTotal) AS DECIMAL(18,2)) AS Revenue
+FROM Sales.SalesOrderDetail sod
+JOIN Production.Product p
+    ON sod.ProductID = p.ProductID
+JOIN Production.ProductSubcategory ps
+    ON p.ProductSubcategoryID = ps.ProductSubcategoryID
+JOIN Production.ProductCategory pc
+    ON ps.ProductCategoryID = pc.ProductCategoryID
+GROUP BY pc.Name
+ORDER BY Revenue DESC;
+
+/*What is the average revenue generated per product?*/
+SELECT
+    CAST(AVG(ProductRevenue) AS DECIMAL(18,2)) AS AvgRevenuePerProduct
+FROM
+(
+    SELECT
+        ProductID,
+        SUM(LineTotal) AS ProductRevenue
+    FROM Sales.SalesOrderDetail
+    GROUP BY ProductID
+) AS ProductSales;
+
+/*Which products generate the least revenue?*/
+SELECT TOP 10
+    p.Name AS ProductName,
+    CAST(SUM(sod.LineTotal) AS DECIMAL(18,2)) AS Revenue
+FROM Sales.SalesOrderDetail sod
+JOIN Production.Product p
+    ON sod.ProductID = p.ProductID
+GROUP BY p.Name
+ORDER BY Revenue ASC;
+
+//*Customer Analysis*//
+/*Which customers generate the most revenue?*/
+SELECT TOP 10
+    soh.CustomerID,
+    CAST(SUM(soh.TotalDue) AS DECIMAL(18,2)) AS Revenue
+FROM Sales.SalesOrderHeader soh
+GROUP BY soh.CustomerID
+ORDER BY Revenue DESC;
+
+/*
+
 
