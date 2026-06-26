@@ -35,11 +35,11 @@ The AdventureWorks database contains multiple business areas including Sales, Pr
 How has revenue changed over time?
 
 ## Result
-Yearly Trend Chart
+### Yearly Trend Chart
 
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Revenue%20Trend%20by%20Year-Line%20chart.png)
 
-Monthly Trend Chart
+### Monthly Trend Chart
 
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Revenue%20Trend%20by%20Month-Line%20chart.png)
 
@@ -83,7 +83,7 @@ Which product sold the highest number of units?
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Top%2010%20Products%20by%20Quantity%20Sold.png)
 
 ## Insight
-AWC Logo Cap achieved strong sales volumes of 8311, indicating consistent customer demand and broad market appeal.
+AWC Logo Cap achieved high sales volumes of 8311, indicating consistent customer demand and broad market appeal.
 
 ## Business Question 7
 Which product categories contribute the most revenue?
