@@ -35,11 +35,18 @@ The AdventureWorks database contains multiple business areas including Sales, Pr
 How has revenue changed over time?
 
 ## Result
-
+Yearly Trend Chart
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Revenue%20Trend%20by%20Year-Line%20chart.png)
+
+Monthly Trend Chart
+![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Revenue%20Trend%20by%20Month-Line%20chart.png)
 
 ## Insight
 Revenue increased significantly between 2011 and 2013, growing from $14.16 million to $48.97 million. Revenue then declined to $22.42 million in 2014, indicating a change in purchasing patterns or market conditions.
+
+Monthly revenue trends revealed fluctuations throughout the analysis period, suggesting seasonal demand patterns and changing customer purchasing behavior.
+
+
 
 
 
