@@ -83,7 +83,7 @@ Which product sold the highest number of units?
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Top%2010%20Products%20by%20Quantity%20Sold.png)
 
 ## Insight
-AWC Logo Cap achieved high sales volumes of 8311, indicating consistent customer demand and broad market appeal.
+AWC Logo Cap achieved high sales volumes of 8,311 units, indicating consistent customer demand and broad market appeal.
 
 ## Business Question 7
 Which product categories contribute the most revenue?
@@ -157,7 +157,7 @@ Which sales territories generate the most revenue?
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Revenue%20by%20Territory%20chart.png)
 
 ## Insight
-Australia Territory generated the most revenue of over $25 million, suggesting key geographic market for continued growth.
+Australia Territory generated the most revenue of approximately $27.2 million, suggesting key geographic market for continued growth.
 
 ## Business Question 16
 Which territory generate the highest number of orders?
@@ -166,7 +166,7 @@ Which territory generate the highest number of orders?
 ![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Number%20of%20Orders%20by%20Territory.png)
 
 ## Insight
-Australia generated the highest number with almost 7,000 orders, suggesting key geographic market for continued growth.
+Australia generated the highest number with 7,843 orders, suggesting key geographic market for continued growth.
 
 ## Business Question 17
 Which territory has the highest average order value?
