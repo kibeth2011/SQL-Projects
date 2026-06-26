@@ -4,7 +4,7 @@
 This project analyzes sales data from the AdventureWorks database using Microsoft SQL Server. The objective was to explore business performance, identify sales trends, evaluate product performance, understand customer behavior, and assess territory performance. Through SQL queries and data visualization, the analysis provides insights that can support strategic business decisions and improve overall sales performance.
 
 ## Dataset
-The file is larger than 25MB. I could not upload it. Please download it below
+The file is larger than 25MB. Therefore, I could not upload it. Please download it below
 - <a href="https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak">AdventureWorks2022</a>
 
 ## Tools Used
