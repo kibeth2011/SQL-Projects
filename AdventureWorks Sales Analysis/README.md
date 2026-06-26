@@ -46,6 +46,67 @@ Revenue increased significantly between 2011 and 2013, growing from $14.16 milli
 
 Monthly revenue trends revealed fluctuations throughout the analysis period, suggesting seasonal demand patterns and changing customer purchasing behavior.
 
+# Business Question
+Was revenue growth driven by more orders?
+
+## Result
+![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Number%20of%20Orders%20by%20Year-Bar%20chart.png)
+
+## Insight
+Order volume increased dramatically from 1,607 orders in 2011 to 11,761 orders in 2014. This indicates that business growth was supported by a substantial increase in customer transactions.
+
+## Business Question
+Are customers spending more per order over time?
+
+## Result
+![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Average%20Order%20Value%20by%20Year-Bar%20Graph.png)
+
+## Insight
+Average order value peaked at $9,623.42 in 2012 before declining to $1,906.26 in 2014. Although order volume increased, customers were placing smaller orders on average.
+
+# Product Analysis
+## Business Question
+Which product generated the most revenue?
+
+## Result
+![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Top%2010%20Products%20by%20Revenue.png)
+
+## Insight
+The highest-performing product was Mountain-200 Black 38. It generated approximately $4.4 million in revenue, demonstrating the importance of maintaining strong inventory, marketing, and sales strategies.
+
+## Business Question
+Which product sold the highest number of units?
+
+## Result
+![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Top%2010%20Products%20by%20Quantity%20Sold.png)
+
+## Insight
+AWC Logo Cap achieved strong sales volumes of 8311, indicating consistent customer demand and broad market appeal.
+
+## Business Question
+Which product categories contribute the most revenue?
+
+## Result
+![Reload Image](https://github.com/kibeth2011/SQL-Projects/blob/main/AdventureWorks%20Sales%20Analysis/Screenshots/Product%20Category%20Revenue%20chart.png)
+
+## Insight
+Bikes category contributed to the most revenue of approximately $94.7 million, highlighting the category that drive overall business performance and profitability.
+
+## Business Question
+Which product generate the least revenue?
+
+## Result
+LL Road Seat/Saddle with $162.72
+
+## Insight
+The LL Road Seat/Saddle generated only $162.72 in revenue, making it the lowest-performing product identified in the analysis. This product may require review regarding pricing, promotion, or inventory allocation.
+
+## Business Question
+What is the average revenue generated per product?
+
+## Insight
+The average revenue generated per product was approximately $412,956.32, indicating substantial variation between top-performing and low-performing products.
+
 
 
 
